@@ -22,45 +22,23 @@ You can install the required library using pip:
 
 pip install PyQt5
 
-How to Run
+How to Run:
 
-    Clone the repository (or download the snake.py file):
-
-    git clone <repository_url>
-    cd <repository_directory>
-
-    (Replace <repository_url> and <repository_directory> with your actual repository information if you host it on GitHub, GitLab, etc.)
-
-    Run the game:
-
-    python snake.py
-
-How to Play
-
-    Start the Game: Run the snake.py script. You will be prompted to choose a difficulty level (Easy, Medium, or Hard).
-
-    Controls: Use the Arrow Keys (Up, Down, Left, Right) to control the snake's direction.
-
-    Objective: Guide the snake to eat the red apples. Each apple eaten increases your score and the snake's length.
-
-    Game Over: The game ends if the snake hits the boundaries of the game board or collides with its own body.
-
-    Restart: After a game over, a "Repeat" button will appear, allowing you to start a new game.
+    pip install PyQT5
+    git clone https://github.com/Holy-Pentagram/PySnake
+    cd PySnake
+    python3 snake.py
 
 Game Structure
 
 The game consists of three main PyQt5 windows:
 
     SnakeGame: The main game window where the snake and apple are displayed.
-
     SCORE: A separate window displaying the current score.
-
     ASCIIART: A window dedicated to displaying ASCII art based on game events.
 
 Customization
 
     ASCII Art: You can modify the ascii_art_default, ascii_art_win, and ascii_art_loose variables in the snake.py file to change the displayed ASCII art.
-
     Game Speed: The speed variable (initialized based on difficulty) can be adjusted for different game paces.
-
     Board Size: The 25 unit size for segments and grid lines can be adjusted, but ensure consistency across calculations.
